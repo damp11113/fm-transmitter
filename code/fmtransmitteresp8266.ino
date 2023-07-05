@@ -2,10 +2,10 @@
 #include <PubSubClient.h>
 #include <ESP8266WiFi.h>
 
-#define WIFI_STA_NAME "NEW"
-#define WIFI_STA_PASS  "0981789654"
-#define MQTT_SERVER   "0.tcp.ap.ngrok.io"
-#define MQTT_PORT     11755
+#define WIFI_STA_NAME ""
+#define WIFI_STA_PASS  ""
+#define MQTT_SERVER   ""
+#define MQTT_PORT     1883
 #define MQTT_USERNAME ""
 #define MQTT_PASSWORD ""
 #define MQTT_NAME     "fmtx"
