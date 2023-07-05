@@ -1,0 +1,26 @@
+import time
+import board
+import digitalio
+import usb_hid
+from adafruit_hid.keyboard import Keyboard
+from adafruit_hid.keyboard_layout_us import KeyboardLayoutUS
+from adafruit_hid.keycode import Keycode
+
+time.sleep(0.1)
+
+keyboard = Keyboard(usb_hid.devices)
+keyboard_layout = KeyboardLayoutUS(keyboard)  # We're in the US :)
+
+print("ready")
+print("working...")
+
+keyboard.press(Keycode.WINDOWS, Keycode.R)  # "Press"...
+keyboard.release_all()  # ..."Release"!
+
+time.sleep(0.1)
+keyboard_layout.write("https://www.youtube.com/watch?v=xMHJGd3wwZk")
+time.sleep(0.5)
+keyboard.press(Keycode.ENTER)  # "Press"...
+keyboard.release_all()  # ..."Release"!
+
+print("done!")
