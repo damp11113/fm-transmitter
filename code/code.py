@@ -276,6 +276,9 @@ class Settings:
         display.print(f"Broadcasting on\n{self.frequency_khz / 1000.0} Mhz")
         time.sleep(1)
         self.waitlock()
+        time.sleep(1)
+        display.clear()
+        display.print(f"Broadcasting...\nlocked")
     
     def powerdown(self):
         print("[SI4713] Shutdown...")
@@ -319,10 +322,6 @@ except Exception as e:
     Failureled.value = True
     simpleio.tone(board.GP4, 440, duration=0.1)
     print(e)
-
-time.sleep(1)
-display.clear()
-display.print(f"Broadcasting...\nlocked")
 
 time.sleep(0.1)
 esp8266.reset_input_buffer()
