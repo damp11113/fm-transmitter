@@ -18,7 +18,7 @@ void setup() {
   pinMode(BUILTIN_LED, OUTPUT); 
 
   Serial.begin(115200);
-  uart.begin(9600); // Set baudrate to match Raspberry Pi Pico
+  uart.begin(11520); // Set baudrate to match Raspberry Pi Pico
 
   WiFi.mode(WIFI_STA); 
   WiFi.begin(WIFI_STA_NAME, WIFI_STA_PASS);
@@ -53,6 +53,11 @@ void setup() {
   mqtt.subscribe("fmtx/transmitter/si4713/txfreq");
   mqtt.subscribe("fmtx/transmitter/si4713/rds/station");
   mqtt.subscribe("fmtx/transmitter/si4713/rds/buffer");
+  mqtt.subscribe("fmtx/transmitter/si4713/txcompo");
+  mqtt.subscribe("fmtx/transmitter/si4713/rds/pty");
+  mqtt.subscribe("fmtx/transmitter/si4713/audiochannel");
+  mqtt.subscribe("fmtx/transmitter/si4713/rds/enable");
+  mqtt.subscribe("fmtx/transmitter/si4713/power");
   //mqtt.subscribe("fmtx/transmitter/si4713/rds/picode");
   digitalWrite(BUILTIN_LED, HIGH);
 }
@@ -66,6 +71,7 @@ void loop() {
     int index1 = input.indexOf(':');
     int index2 = input.indexOf(' ');
     String command = input.substring(0, index1);
+    Serial.println("[RP2040] "+command);
     String id = input.substring(index1 + 1, index2);
     String message = input.substring(index2 + 1);
 
@@ -102,6 +108,18 @@ void callback(char* topic, byte* payload, unsigned int length) {
     uart.print("!settxfreq "+receivedMessage+"|");
   } else if (strcmp(topic, "fmtx/transmitter/si4713/txpower") == 0) {
     uart.print("!setgentxpower "+receivedMessage+"|");
+  } else if (strcmp(topic, "fmtx/transmitter/si4713/rds/pty") == 0) {
+    uart.print("!setrdspty "+receivedMessage+"|");
+  } else if (strcmp(topic, "fmtx/transmitter/si4713/audiochannel") == 0) {
+    uart.print("!setaudiochannel "+receivedMessage+"|");
+  } else if (strcmp(topic, "fmtx/transmitter/si4713/rds/enable") == 0) {
+    uart.print("!setrds "+receivedMessage+"|");
+  } else if (strcmp(topic, "fmtx/transmitter/si4713/power") == 0) {
+    if (receivedMessage == "on") {
+      uart.print("!powerup|");
+    } else if (receivedMessage == "off") {
+      uart.print("!powerdown|");
+    }
   }
 
   Serial.println(receivedMessage);
