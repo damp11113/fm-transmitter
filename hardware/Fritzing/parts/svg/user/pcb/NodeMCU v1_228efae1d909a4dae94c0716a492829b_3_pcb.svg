@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE svg>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1.375in" height="2in" viewBox="0 0 99 144"  id="Layer_1" gorn="0" x="0px" version="1.1" xml:space="preserve" y="0px" xmlns:xml="http://www.w3.org/XML/1998/namespace" enable-background="new -66.38 -5.38 99 144">
+    <desc >
+        <referenceFile >NodeMCUPCB2.svg</referenceFile>
+    </desc>
+    <g  transform="translate(66.38,5.38)">
+        <g >
+            <g >
+                <g >
+                    <g >
+                        <g >
+                            <g >
+                                <g >
+                                    <g  id="silkscreen" gorn="0.1.0.0.0.0.0.0.0.0">
+                                        <line  y1="-1.78" y2="133.287" stroke="#FFFFFF" x1="-62.38" stroke-width="0.75" x2="-62.38" fill="none"/>
+                                        <line  y1="133.287" y2="-1.78" stroke="#FFFFFF" x1="29.521" stroke-width="0.75" x2="29.521" fill="none"/>
+                                        <line  y1="133.287" y2="133.287" stroke="#FFFFFF" x1="-62.38" stroke-width="0.75" x2="29.021" fill="none"/>
+                                        <line  y1="-3.28" y2="-3.28" stroke="#FFFFFF" x1="-62.38" stroke-width="0.75" x2="29.22" fill="none"/>
+                                    </g>
+                                    <g  id="copper0" gorn="0.1.0.0.0.0.0.0.0.1">
+                                        <g  id="copper1" gorn="0.1.0.0.0.0.0.0.0.1.0">
+                                            <circle r="1.584"  id="connector2pad" gorn="0.1.0.0.0.0.0.0.0.1.0.0" cx="25.204" cy="20.036" stroke="#FFBF00" stroke-width="1.152" fill="none"/>
+                                            <circle r="1.584"  id="connector42pin" gorn="0.1.0.0.0.0.0.0.0.1.0.1" cx="-55.796" cy="2.036" stroke="#FFBF00" stroke-width="1.152" fill="none"/>
+                                            <circle r="1.584"  id="connector41pin" gorn="0.1.0.0.0.0.0.0.0.1.0.2" cx="-55.796" cy="11.036" stroke="#FFBF00" stroke-width="1.152" fill="none"/>
+                                            <circle r="1.584"  id="connector40pin" gorn="0.1.0.0.0.0.0.0.0.1.0.3" cx="-55.796" cy="20.036" stroke="#FFBF00" stroke-width="1.152" fill="none"/>
+                                            <circle r="1.584"  id="connector39pin" gorn="0.1.0.0.0.0.0.0.0.1.0.4" cx="-55.796" cy="29.036" stroke="#FFBF00" stroke-width="1.152" fill="none"/>
+                                            <circle r="1.584"  id="connector38pin" gorn="0.1.0.0.0.0.0.0.0.1.0.5" cx="-55.796" cy="38.036" stroke="#FFBF00" stroke-width="1.152" fill="none"/>
+                                            <circle r="1.584"  id="connector1pad" gorn="0.1.0.0.0.0.0.0.0.1.0.6" cx="25.204" cy="11.036" stroke="#FFBF00" stroke-width="1.152" fill="none"/>
+                                            <circle r="1.584"  id="connector0pad" gorn="0.1.0.0.0.0.0.0.0.1.0.7" cx="25.204" cy="2.036" stroke="#FFBF00" stroke-width="1.152" fill="none"/>
+                                            <circle r="1.584"  id="connector3pad" gorn="0.1.0.0.0.0.0.0.0.1.0.8" cx="25.204" cy="29.036" stroke="#FFBF00" stroke-width="1.152" fill="none"/>
+                                            <circle r="1.584"  id="connector37pin" gorn="0.1.0.0.0.0.0.0.0.1.0.9" cx="-55.796" cy="47.036" stroke="#FFBF00" stroke-width="1.152" fill="none"/>
+                                            <circle r="1.584"  id="connector36pin" gorn="0.1.0.0.0.0.0.0.0.1.0.10" cx="-55.796" cy="56.036" stroke="#FFBF00" stroke-width="1.152" fill="none"/>
+                                            <circle r="1.584"  id="connector35pin" gorn="0.1.0.0.0.0.0.0.0.1.0.11" cx="-55.796" cy="65.036" stroke="#FFBF00" stroke-width="1.152" fill="none"/>
+                                            <circle r="1.584"  id="connector34pin" gorn="0.1.0.0.0.0.0.0.0.1.0.12" cx="-55.796" cy="74.036" stroke="#FFBF00" stroke-width="1.152" fill="none"/>
+                                            <circle r="1.584"  id="connector33pin" gorn="0.1.0.0.0.0.0.0.0.1.0.13" cx="-55.796" cy="83.036" stroke="#FFBF00" stroke-width="1.152" fill="none"/>
+                                            <circle r="1.584"  id="connector19pad" gorn="0.1.0.0.0.0.0.0.0.1.0.14" cx="-55.796" cy="92.036" stroke="#FFBF00" stroke-width="1.152" fill="none"/>
+                                            <circle r="1.584"  id="connector18pad" gorn="0.1.0.0.0.0.0.0.0.1.0.15" cx="-55.796" cy="101.036" stroke="#FFBF00" stroke-width="1.152" fill="none"/>
+                                            <circle r="1.584"  id="connector17pad" gorn="0.1.0.0.0.0.0.0.0.1.0.16" cx="-55.796" cy="110.036" stroke="#FFBF00" stroke-width="1.152" fill="none"/>
+                                            <circle r="1.584"  id="connector16pad" gorn="0.1.0.0.0.0.0.0.0.1.0.17" cx="-55.796" cy="119.036" stroke="#FFBF00" stroke-width="1.152" fill="none"/>
+                                            <circle r="1.584"  id="connector15pad" gorn="0.1.0.0.0.0.0.0.0.1.0.18" cx="-55.796" cy="128.036" stroke="#FFBF00" stroke-width="1.152" fill="none"/>
+                                            <circle r="1.584"  id="connector7pad" gorn="0.1.0.0.0.0.0.0.0.1.0.19" cx="25.204" cy="65.036" stroke="#FFBF00" stroke-width="1.152" fill="none"/>
+                                            <circle r="1.584"  id="connector8pad" gorn="0.1.0.0.0.0.0.0.0.1.0.20" cx="25.204" cy="74.036" stroke="#FFBF00" stroke-width="1.152" fill="none"/>
+                                            <circle r="1.584"  id="connector9pad" gorn="0.1.0.0.0.0.0.0.0.1.0.21" cx="25.204" cy="83.036" stroke="#FFBF00" stroke-width="1.152" fill="none"/>
+                                            <circle r="1.584"  id="connector10pad" gorn="0.1.0.0.0.0.0.0.0.1.0.22" cx="25.204" cy="92.036" stroke="#FFBF00" stroke-width="1.152" fill="none"/>
+                                            <circle r="1.584"  id="connector11pad" gorn="0.1.0.0.0.0.0.0.0.1.0.23" cx="25.204" cy="101.036" stroke="#FFBF00" stroke-width="1.152" fill="none"/>
+                                            <circle r="1.584"  id="connector12pad" gorn="0.1.0.0.0.0.0.0.0.1.0.24" cx="25.204" cy="110.036" stroke="#FFBF00" stroke-width="1.152" fill="none"/>
+                                            <circle r="1.584"  id="connector13pad" gorn="0.1.0.0.0.0.0.0.0.1.0.25" cx="25.204" cy="119.036" stroke="#FFBF00" stroke-width="1.152" fill="none"/>
+                                            <circle r="1.584"  id="connector14pad" gorn="0.1.0.0.0.0.0.0.0.1.0.26" cx="25.204" cy="128.036" stroke="#FFBF00" stroke-width="1.152" fill="none"/>
+                                            <circle r="1.584"  id="connector4pad" gorn="0.1.0.0.0.0.0.0.0.1.0.27" cx="25.204" cy="38.036" stroke="#FFBF00" stroke-width="1.152" fill="none"/>
+                                            <circle r="1.584"  id="connector5pad" gorn="0.1.0.0.0.0.0.0.0.1.0.28" cx="25.204" cy="47.036" stroke="#FFBF00" stroke-width="1.152" fill="none"/>
+                                            <circle r="1.584"  id="connector6pad" gorn="0.1.0.0.0.0.0.0.0.1.0.29" cx="25.204" cy="56.036" stroke="#FFBF00" stroke-width="1.152" fill="none"/>
+                                        </g>
+                                    </g>
+                                    <g  id="keepout" gorn="0.1.0.0.0.0.0.0.0.2"/>
+                                    <g  id="soldermask" gorn="0.1.0.0.0.0.0.0.0.3"/>
+                                    <g  id="outline" gorn="0.1.0.0.0.0.0.0.0.4"/>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<module moduleId="OLED 128x64 I2C Monochrome Display_bb571c5409e7e6421c7206ca6943925f_2" referenceFile="128x64_Monochrom_OLED_Display_with_SPI_Control__e4e62ab54f361ab2e6b3b0c63e8abc35.fzp" fritzingVersion="0.7.5b.07.02.6130">
+ <author>Metod Sem</author>
+ <title>OLED 128x64 I2C Monochrome Display</title>
+ <label>OLED I2C</label>
+ <date>sre maj 11 2016</date>
+ <url/>
+ <tags>
+  <tag>OLED</tag>
+  <tag>SD1306</tag>
+  <tag>I2C</tag>
+  <tag>display</tag>
+ </tags>
+ <properties>
+  <property name="part number"></property>
+  <property name="layer"></property>
+  <property name="family">OLED I2C</property>
+  <property name="variant">variant 2</property>
+ </properties>
+ <description>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;">
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;span style=" font-size:8pt;">OLED 128x64 I2C Monochrome Display &lt;/span>&lt;/p>&lt;/body>&lt;/html></description>
+ <views>
+  <iconView>
+   <layers image="icon/OLED 128x64 I2C Monochrome Display_bb571c5409e7e6421c7206ca6943925f_3_icon.svg">
+    <layer layerId="icon"/>
+   </layers>
+  </iconView>
+  <breadboardView>
+   <layers image="breadboard/OLED 128x64 I2C Monochrome Display_bb571c5409e7e6421c7206ca6943925f_3_breadboard.svg">
+    <layer layerId="breadboard"/>
+   </layers>
+  </breadboardView>
+  <schematicView>
+   <layers image="schematic/OLED 128x64 I2C Monochrome Display_bb571c5409e7e6421c7206ca6943925f_3_schematic.svg">
+    <layer layerId="schematic"/>
+   </layers>
+  </schematicView>
+  <pcbView>
+   <layers image="pcb/OLED 128x64 I2C Monochrome Display_bb571c5409e7e6421c7206ca6943925f_3_pcb.svg">
+    <layer layerId="copper0"/>
+    <layer layerId="copper1"/>
+    <layer layerId="silkscreen"/>
+   </layers>
+  </pcbView>
+ </views>
+ <connectors>
+  <connector name="SDA" id="connector4" type="male">
+   <description>no description yet</description>
+   <views>
+    <breadboardView>
+     <p svgId="connector4pin" layer="breadboard"/>
+    </breadboardView>
+    <schematicView>
+     <p svgId="connector4pin" layer="schematic"/>
+    </schematicView>
+    <pcbView>
+     <p svgId="connector4pin" layer="copper1"/>
+     <p svgId="connector4pin" layer="copper0"/>
+    </pcbView>
+   </views>
+  </connector>
+  <connector name="SCK" id="connector5" type="male">
+   <description>no description yet</description>
+   <views>
+    <breadboardView>
+     <p svgId="connector5pin" layer="breadboard"/>
+    </breadboardView>
+    <schematicView>
+     <p svgId="connector5pin" layer="schematic"/>
+    </schematicView>
+    <pcbView>
+     <p svgId="connector5pin" layer="copper1"/>
+     <p svgId="connector5pin" layer="copper0"/>
+    </pcbView>
+   </views>
+  </connector>
+  <connector name="VDD" id="connector7" type="male">
+   <description>3V3</description>
+   <views>
+    <breadboardView>
+     <p svgId="connector7pin" layer="breadboard"/>
+    </breadboardView>
+    <schematicView>
+     <p svgId="connector7pin" layer="schematic"/>
+    </schematicView>
+    <pcbView>
+     <p svgId="connector7pin" layer="copper1"/>
+     <p svgId="connector7pin" layer="copper0"/>
+    </pcbView>
+   </views>
+  </connector>
+  <connector name="GND" id="connector8" type="male">
+   <description>ground</description>
+   <views>
+    <breadboardView>
+     <p svgId="connector8pin" layer="breadboard"/>
+    </breadboardView>
+    <schematicView>
+     <p svgId="connector8pin" layer="schematic"/>
+    </schematicView>
+    <pcbView>
+     <p svgId="connector8pin" layer="copper1"/>
+     <p svgId="connector8pin" layer="copper0"/>
+    </pcbView>
+   </views>
+  </connector>
+ </connectors>
+</module>

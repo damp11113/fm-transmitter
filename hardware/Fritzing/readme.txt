@@ -1,0 +1,1 @@
+please install parts in to your Fritzing before open "fm transmitter.fzz"

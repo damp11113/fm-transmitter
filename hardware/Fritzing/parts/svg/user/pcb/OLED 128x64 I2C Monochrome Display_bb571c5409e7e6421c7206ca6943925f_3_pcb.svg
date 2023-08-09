@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE svg>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg xmlns="http://www.w3.org/2000/svg"  enable-background="new 0 0 32 10" version="1.1" x="0px" y="0px" xml:space="preserve" width="0.444444in" xmlns:xml="http://www.w3.org/XML/1998/namespace" height="0.138889in" viewBox="0 0 32 10">
+    <desc >
+        <referenceFile >svg.pcb.OLED_128x64 I2C_Monnochrome_Display_pcb.svg</referenceFile>
+    </desc>
+    <g  id="silkscreen" gorn="0.1">
+        <g >
+            <polygon  stroke-width="0.5" stroke="#FFFFFF" points="2.5,0.5 31.5,0.5 31.5,9.5 0.5,9.5 0.5,2.5 " fill="none" stroke-miterlimit="10"/>
+            <g  transform="matrix(1 0 0 1 1.9702 8.3428)">
+                <g >
+                    <g >
+                        <g >
+                            <text font-family="Droid Sans"  font-size="3" fill="#FFFFFF">GND</text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g  transform="matrix(1 0 0 1 9.3359 8.3428)">
+                <g >
+                    <g >
+                        <g >
+                            <text font-family="Droid Sans"  font-size="3" fill="#FFFFFF">VDD</text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g  transform="matrix(1 0 0 1 16.5371 8.3428)">
+                <g >
+                    <g >
+                        <g >
+                            <text font-family="Droid Sans"  font-size="3" fill="#FFFFFF">SCK</text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g  transform="matrix(1 0 0 1 23.7441 8.3428)">
+                <g >
+                    <g >
+                        <g >
+                            <text font-family="Droid Sans"  font-size="3" fill="#FFFFFF">SDA</text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+    <g  id="copper0" gorn="0.2">
+        <path  id="connector8pin" stroke-width="1.5" d="M6.721,3.418c0,0.782-0.635,1.417-1.416,1.417c-0.783,0-1.418-0.635-1.418-1.417C3.887,2.635,4.521,2,5.303,2C6.085,2,6.721,2.635,6.721,3.418z" gorn="0.2.0" stroke="#F6CA34" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <path  id="connector7pin" stroke-width="1.5" d="M13.921,3.418c0,0.782-0.635,1.417-1.418,1.417c-0.782,0-1.418-0.635-1.418-1.417C11.085,2.635,11.721,2,12.503,2C13.286,2,13.921,2.635,13.921,3.418z" gorn="0.2.1" stroke="#F6CA34" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <path  id="connector5pin" stroke-width="1.5" d="M21.121,3.418c0,0.782-0.635,1.417-1.418,1.417c-0.781,0-1.416-0.635-1.416-1.417C18.287,2.635,18.922,2,19.703,2C20.486,2,21.121,2.635,21.121,3.418z" gorn="0.2.2" stroke="#F6CA34" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <path  id="connector4pin" stroke-width="1.5" d="M28.322,3.418c0,0.782-0.635,1.417-1.418,1.417S25.486,4.2,25.486,3.418C25.486,2.635,26.121,2,26.904,2S28.322,2.635,28.322,3.418z" gorn="0.2.3" stroke="#F6CA34" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+</svg>
