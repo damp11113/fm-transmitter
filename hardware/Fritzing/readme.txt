@@ -1,1 +1,1 @@
-please install parts in to your Fritzing before open "fm transmitter.fzz"
+please install parts into your Fritzing before open "fm transmitter.fzz"
