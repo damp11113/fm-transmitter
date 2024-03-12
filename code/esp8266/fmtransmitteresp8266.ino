@@ -1,18 +1,71 @@
 #include <SoftwareSerial.h>
 #include <PubSubClient.h>
 #include <ESP8266WiFi.h>
+#include <ESP8266WebServer.h>
+#include <EEPROM.h>
+#include <DNSServer.h>
+#include <WiFiManager.h>
+#include <ESP8266mDNS.h>
+
 
 #define WIFI_STA_NAME ""
 #define WIFI_STA_PASS  ""
 #define MQTT_SERVER   ""
-#define MQTT_PORT     1883
+#define MQTT_PORT     
 #define MQTT_USERNAME ""
 #define MQTT_PASSWORD ""
 #define MQTT_NAME     "fmtx"
 
+char mqttServer[40];
+char mqttPort[6];
+char mqttUsername[40];
+char mqttPassword[40];
+
 SoftwareSerial uart(D2, D3); // RX, TX
 WiFiClient client;
 PubSubClient mqtt(client);
+//ESP8266WebServer server(80);
+
+void saveConfigCallback() {
+    Serial.println("Configuration saved.");
+}
+
+void configureWiFiManager() {
+  WiFiManager wifiManager;
+
+  WiFi.hostname("ThaiSDR THS-FTX1");
+
+  if (!MDNS.begin("ThaiSDR THS-FTX1")) {
+    Serial.println("Error setting up MDNS responder!");
+  }
+
+  // Parameters to be configured
+  WiFiManagerParameter custom_mqtt_server("server", "MQTT Server", mqttServer, 40);
+  WiFiManagerParameter custom_mqtt_port("port", "MQTT Port", mqttPort, 6);
+  WiFiManagerParameter custom_mqtt_username("username", "MQTT Username", mqttUsername, 40);
+  WiFiManagerParameter custom_mqtt_password("password", "MQTT Password", mqttPassword, 40);
+  
+  wifiManager.setTitle("ThaiSDR THS-FTX1 config");
+
+  wifiManager.addParameter(&custom_mqtt_server);
+  wifiManager.addParameter(&custom_mqtt_port);
+  wifiManager.addParameter(&custom_mqtt_username);
+  wifiManager.addParameter(&custom_mqtt_password);
+
+  wifiManager.autoConnect("ThaiSDR THS-FTX1");
+
+  //wifiManager.startConfigPortal();
+
+  //wifiManager.setConfigPortalBlocking(false);
+
+  // Save the custom parameters to EEPROM
+  strcpy(mqttServer, custom_mqtt_server.getValue());
+  strcpy(mqttPort, custom_mqtt_port.getValue());
+  strcpy(mqttUsername, custom_mqtt_username.getValue());
+  strcpy(mqttPassword, custom_mqtt_password.getValue());
+
+}
+
 
 void setup() {
   pinMode(BUILTIN_LED, OUTPUT); 
@@ -20,33 +73,21 @@ void setup() {
   Serial.begin(115200);
   uart.begin(11520); // Set baudrate to match Raspberry Pi Pico
 
-  WiFi.mode(WIFI_STA); 
-  WiFi.begin(WIFI_STA_NAME, WIFI_STA_PASS);
-  Serial.println("WIFI Connecting");
-  while (WiFi.status() != WL_CONNECTED) {
-    digitalWrite(LED_BUILTIN, HIGH);
-    delay(500);
-    Serial.print(".");
-    digitalWrite(LED_BUILTIN, LOW);
-  }
-  digitalWrite(LED_BUILTIN, LOW);
-  WiFi.hostname("fm transmitter");
-  Serial.println("");
-  Serial.println("WiFi connected");
-  Serial.println("IP address: ");
-  Serial.println(WiFi.localIP());
+  //WiFi.mode(WIFI_STA);
+
+  configureWiFiManager();
 
   Serial.println("MQTT Connecting");
   mqtt.setServer(MQTT_SERVER, MQTT_PORT);
   mqtt.setCallback(callback);
 
-  mqtt.connect(MQTT_NAME, MQTT_USERNAME, MQTT_PASSWORD);
-
-  Serial.print("testing Publish message: ");
-  if (mqtt.publish("TEST/MQTT","Arduino Test MQTT") == true) { 
-    Serial.println("Success sending");
+  if (mqtt.connect(MQTT_NAME, mqttUsername, mqttPassword)) {
+    // MQTT connected successfully
+    Serial.println("MQTT connected");
   } else {
-    Serial.println("Fail sending");
+    // MQTT connection failed
+    Serial.println("MQTT connection failed");
+    // Handle the failure here, such as retrying or going into a deep sleep mode.
   }
 
   mqtt.subscribe("fmtx/transmitter/si4713/txpower");
@@ -90,7 +131,7 @@ void loop() {
 }
 
 void sendcommand(String command, String receivedMessage) {
-  uart.print("<<<" + command + " " + receivedMessage + "|");
+  uart.print(command + " " + receivedMessage + "|");
 }
 
 
